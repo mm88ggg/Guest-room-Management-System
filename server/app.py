@@ -39,9 +39,9 @@ app.config.update(
     MAIL_PORT='587',
     MAIL_USE_TLS=True,
     # MAIL_USE_SSL
-    MAIL_USERNAME="owiefvdfn@qq.com",
-    MAIL_PASSWORD="ndpevnwlgrqkbfbj",  # 生成授权码，授权码是开启smtp服务后给出的
-    MAIL_DEFAULT_SENDER="owiefvdfn@qq.com",
+    MAIL_USERNAME="",
+    MAIL_PASSWORD="",  # 生成授权码，授权码是开启smtp服务后给出的
+    MAIL_DEFAULT_SENDER="",
 )
 
 
@@ -50,7 +50,7 @@ mail = Mail(app)
 CORS(app)
 
 # 配置数据库的连接
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pymssql://sa:ilovelq@1.117.228.153/HotelManagement'
+app.config['SQLALCHEMY_DATABASE_URI'] = ''
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 db = SQLAlchemy(app)

@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 
 class DatabaseManagement():
     def conn(self):
-        self.engine = create_engine('mssql+pymssql://sa:ilovelq@1.117.228.153/HotelManagement',echo=True)  # 初始化数据库连接
+        self.engine = create_engine('',echo=True)  # 初始化数据库连接
         DBsession = sessionmaker(bind=self.engine)  # 创建DBsession类
         self.session = DBsession()  # 创建对象
 
