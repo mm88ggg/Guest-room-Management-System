@@ -210,7 +210,6 @@ WHERE
 GO
 
 
-3.	函数代码
 CREATE PROCEDURE [dbo].[入住]
   @username AS char(20), 
   @roomid AS CHAR(20), 
